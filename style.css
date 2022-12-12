@@ -1,4 +1,5 @@
 @import url(https://fonts.googleapis.com/css?family=Quicksand:300,regular,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic);
 
 * {
     margin: 0;
@@ -8,6 +9,15 @@
 
 body {
     font-family: "Quicksand", "Helvetica Neue", "Helvetica";
+}
+
+p {
+    font-family: 'Roboto';
+}
+
+span {
+    color: #3D4F9F;
+    font-weight: bold;
 }
 
 .container {
@@ -32,8 +42,6 @@ nav {
 .logo {
     width: 26px;
     height: 26px;
-    /*background-color: #5E81FE;
-    border-radius: 15px; */
     margin-right: 73px;
     margin-left: 117px;
 }
@@ -80,20 +88,12 @@ nav {
 }
 
 .header__social-media a {
-    /* background-color: #D6DAE5; */
     margin-right: 34px;
 }
 
 .header__social-media a:hover {
-    /* filter: hue-rotate(#6188ff); */
-    filter: hue-rotate(-39deg);
     filter: saturate(11);
 }
-
-/* .header__social-media img:hover {
-    filter: hue-rotate(-29deg);
-    filter: saturate(15);
-} */
 
 .header__btn {
     margin-left: 10px;
@@ -111,4 +111,108 @@ nav {
 .header__btn:hover {
     color: #3A79FF;
     background-color: #D2E1FF;
+}
+
+.content {
+    background: linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%);
+}
+
+.content__text {
+    text-align: center;
+    position: relative;
+}
+
+.content-par {
+    padding-top: 92px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #3D4F9F;
+}
+
+.content__h1 {
+    padding-top: 16px;
+    padding-bottom: 28px;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 60px;
+    color: #8D96BD;
+}
+
+.content__par {
+    margin: 0 auto;
+    max-width: 502px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 29px;
+    letter-spacing: 0.03em;
+    color: #8D96BD;
+}
+
+.content-btn {
+    display: flex;
+    justify-content: center;
+    /* padding-top: 20px; */
+}
+
+.content__btn {
+    position: absolute;
+    top: 45%;
+    align-self: center;
+    border: none;
+    width: 52px;
+    height: 52px;
+    border-radius: 25px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 20px rgba(201, 209, 231, 0.6);
+}
+
+@-webkit-keyframes content__btn {
+    0% {
+        -webkit-transform: scale(1) rotateX(0);
+        transform: scale(1) rotateX(0);
+    }
+
+    50% {
+        -webkit-transform: scale(1.5) rotateX(-90deg);
+        transform: scale(1.5) rotateX(-90deg);
+    }
+
+    100% {
+        -webkit-transform: scale(1) rotateX(-180deg);
+        transform: scale(1) rotateX(-180deg);
+    }
+}
+
+@keyframes content__btn {
+    0% {
+        -webkit-transform: scale(1) rotateX(0);
+        transform: scale(1) rotateX(0);
+    }
+
+    50% {
+        -webkit-transform: scale(1.5) rotateX(-90deg);
+        transform: scale(1.5) rotateX(-90deg);
+    }
+
+    100% {
+        -webkit-transform: scale(1) rotateX(-180deg);
+        transform: scale(1) rotateX(-180deg);
+    }
+}
+
+.content__btn:hover {
+    -webkit-animation: content__btn 0.5s linear both;
+    animation: content__btn 0.5s linear both;
+    transition: all 3s ease;
+    box-shadow: 0px 10px 50px rgba(108, 129, 188, 0.6);
+}
+
+.content__line {
+    width: 100vw;
+    max-width: 100%;
+    background-size: cover;
+    background-position: center center;
 }
