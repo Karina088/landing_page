@@ -32,8 +32,8 @@ nav {
 .logo {
     width: 26px;
     height: 26px;
-    background-color: #5E81FE;
-    border-radius: 15px;
+    /*background-color: #5E81FE;
+    border-radius: 15px; */
     margin-right: 73px;
     margin-left: 117px;
 }
