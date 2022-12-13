@@ -115,6 +115,9 @@ nav {
 
 .content {
     background: linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%);
+    border-top: 1px solid #D8E3FE;
+    border-bottom: 1px solid #D8E3FE;
+    max-height: 570px;
 }
 
 .content__text {
@@ -154,13 +157,12 @@ nav {
 .content-btn {
     display: flex;
     justify-content: center;
-    /* padding-top: 20px; */
+    /*padding-top: 20px;*/
 }
 
 .content__btn {
     position: absolute;
-    top: 45%;
-    align-self: center;
+    top: 55%;
     border: none;
     width: 52px;
     height: 52px;
@@ -215,4 +217,84 @@ nav {
     max-width: 100%;
     background-size: cover;
     background-position: center center;
+    margin-top: -14%;
+}
+
+.costumers {
+    border-bottom: 1px solid #D8E3FE;
+    background: #FFFFFF;
+}
+
+.costumers-logo {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 58px;
+    padding-bottom: 58px;
+}
+
+.costumers__img {
+    fill: #D6DAE5;
+}
+
+.costumers__img:hover {
+    fill: #5982E7;
+}
+
+.illustration {
+    background: #F5F8FF;
+    border-bottom: 1px solid #D8E3FE;
+    /* display: flex; */
+    position: relative;
+}
+
+.illustration-par {
+    padding-top: 208px;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #3D4F9F;
+}
+
+.illustration__h2 {
+    padding-top: 27px;
+    padding-bottom: 27px;
+    color: #3D4F9F;
+    font-weight: 400;
+}
+
+.illustration__par {
+    max-width: 420px;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 29px;
+    letter-spacing: 0.03em;
+    color: #8D96BD;
+    padding-bottom: 47px;
+}
+
+.illustration__btn {
+    padding: 13px 25px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    color: #FFFFFF;
+    border: none;
+    background: #4C85FF;
+    box-shadow: 0px 5px 15px rgba(188, 199, 255, 0.75);
+}
+
+.arrow {
+    padding: 0 6px 0 6px;
+}
+
+.illustration-btn {
+    padding: 12px 21px;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 16px;
+    color: #ADB4D2;
+    border: 1px solid #D1D1E4;
+    margin-left: -4px;
 }
