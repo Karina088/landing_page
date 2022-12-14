@@ -22,20 +22,12 @@ document.querySelectorAll('.costumers__img')
             e.target.style.backgroundColor = '#5982E7';
         }));
 
-
 document.querySelectorAll('form')
     .forEach(el => el.addEventListener('click', (event) => event.preventDefault()));
 
 const btnIllustrator = document.querySelector('.illustration__btn');
 const imgIllustrator = document.querySelector('.illustration__img');
-// btnIllustrator.addEventListener('pointerover', () => {
-//     btnIllustrator.classList.toggle('color');
-//     imgIllustrator.classList.toggle('active-img');
-// });
-// btnIllustrator.addEventListener('pointerout', () => {
-//     btnIllustrator.classList.toggle('color');
-//     imgIllustrator.classList.toggle('active-img');
-// });
+
 btnIllustrator.addEventListener("pointerdown", detectInputType);
 
 function detectInputType(event) {
@@ -56,6 +48,18 @@ function detectInputType(event) {
     }
 }
 
-// проверяла на соотвествие h с макетом
-// const costumers = document.querySelector('.costumers');
-// console.log(costumers.offsetHeight);
+
+// прокрутка по ссылкам
+function scrollTo(element) {
+    window.scroll({
+        left: 0,
+        top: element.offsetTop,
+        behavior: 'smooth',
+    })
+}
+const link = document.querySelector('.link-features');
+const featuresClass = document.querySelector('.features');
+
+link.addEventListener('click', () => {
+    scrollTo(featuresClass);
+});
