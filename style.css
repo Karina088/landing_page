@@ -108,11 +108,6 @@ nav {
     border: none;
 }
 
-.header__btn:hover {
-    color: #3A79FF;
-    background-color: #D2E1FF;
-}
-
 .content {
     background: linear-gradient(180deg, #F4F7FF 0%, #F1F5FF 100%);
     border-top: 1px solid #D8E3FE;
@@ -170,45 +165,45 @@ nav {
     box-shadow: 0px 8px 20px rgba(201, 209, 231, 0.6);
 }
 
-@-webkit-keyframes content__btn {
-    0% {
-        -webkit-transform: scale(1) rotateX(0);
-        transform: scale(1) rotateX(0);
-    }
-
-    50% {
-        -webkit-transform: scale(1.5) rotateX(-90deg);
-        transform: scale(1.5) rotateX(-90deg);
-    }
-
-    100% {
-        -webkit-transform: scale(1) rotateX(-180deg);
-        transform: scale(1) rotateX(-180deg);
-    }
-}
-
-@keyframes content__btn {
-    0% {
-        -webkit-transform: scale(1) rotateX(0);
-        transform: scale(1) rotateX(0);
-    }
-
-    50% {
-        -webkit-transform: scale(1.5) rotateX(-90deg);
-        transform: scale(1.5) rotateX(-90deg);
-    }
-
-    100% {
-        -webkit-transform: scale(1) rotateX(-180deg);
-        transform: scale(1) rotateX(-180deg);
-    }
-}
-
-.content__btn:hover {
-    -webkit-animation: content__btn 0.5s linear both;
-    animation: content__btn 0.5s linear both;
+.animation-content__btn {
+    -webkit-animation: animation-content__btn 0.5s linear both;
+    animation: animation-content__btn 0.5s linear both;
     transition: all 3s ease;
     box-shadow: 0px 10px 50px rgba(108, 129, 188, 0.6);
+}
+
+@-webkit-keyframes animation-content__btn {
+    0% {
+        -webkit-transform: scale(1) rotateX(0);
+        transform: scale(1) rotateX(0);
+    }
+
+    50% {
+        -webkit-transform: scale(1.5) rotateX(-90deg);
+        transform: scale(1.5) rotateX(-90deg);
+    }
+
+    100% {
+        -webkit-transform: scale(1) rotateX(-180deg);
+        transform: scale(1) rotateX(-180deg);
+    }
+}
+
+@keyframes animation-content__btn {
+    0% {
+        -webkit-transform: scale(1) rotateX(0);
+        transform: scale(1) rotateX(0);
+    }
+
+    50% {
+        -webkit-transform: scale(1.5) rotateX(-90deg);
+        transform: scale(1.5) rotateX(-90deg);
+    }
+
+    100% {
+        -webkit-transform: scale(1) rotateX(-180deg);
+        transform: scale(1) rotateX(-180deg);
+    }
 }
 
 .content__line {
@@ -280,7 +275,7 @@ nav {
     border: none;
     background: #4C85FF;
     box-shadow: 0px 5px 15px rgba(188, 199, 255, 0.75);
-    margin-bottom: 216px;
+
     transition: all 0.5s ease;
 }
 
@@ -298,6 +293,7 @@ nav {
     font-size: 13px;
     line-height: 16px;
     color: #ADB4D2;
+    background-color: #F5F8FF;
     border: 1px solid #D1D1E4;
     display: inline-block;
     margin-right: 0;
@@ -306,6 +302,7 @@ nav {
 
 form {
     letter-spacing: -4.5px;
+    margin-bottom: 269px;
 }
 
 .illustration__img {
