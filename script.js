@@ -15,15 +15,23 @@ contentBtn.addEventListener('pointerover', () => {
     contentBtn.classList.toggle('animation-content__btn');
 });
 
+const custLogo = document.querySelectorAll('div.costumers-logo>img');
+custLogo.forEach((el) => {
+    el.classList.add('costumers__img');
+    document.querySelectorAll('.costumers__img')
+        .forEach((el) =>
+            el.addEventListener('click', (e) => {
+                e.target.style.backgroundColor = '#5982E7';
+                console.log(e.target);
+            }));
+});
 
-document.querySelectorAll('.costumers__img')
-    .forEach((el) =>
-        el.addEventListener('click', (e) => {
-            e.target.style.backgroundColor = '#5982E7';
-        }));
 
-document.querySelectorAll('form')
-    .forEach(el => el.addEventListener('click', (event) => event.preventDefault()));
+// document.querySelectorAll('form')
+//     .forEach(el => el.addEventListener('click', (event) => event.preventDefault()));
+
+document.querySelector('.illustration__form').addEventListener('click', (event) => event.preventDefault());
+
 
 const btnIllustrator = document.querySelector('.illustration__btn');
 const imgIllustrator = document.querySelector('.illustration__img');

@@ -226,14 +226,6 @@ nav {
     padding-bottom: 58px;
 }
 
-.costumers__img {
-    fill: #D6DAE5;
-}
-
-.costumers__img:hover {
-    fill: #5982E7;
-}
-
 .illustration {
     background: #F5F8FF;
     border-bottom: 1px solid #D8E3FE;
@@ -300,7 +292,7 @@ nav {
     transition: all 0.5s ease;
 }
 
-form {
+.illustration__form {
     letter-spacing: -4.5px;
     margin-bottom: 269px;
 }
@@ -398,4 +390,107 @@ form {
         -webkit-transform: translate(0);
         transform: translate(0);
     }
+}
+
+.features {
+    max-width: 760px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+
+.features__par,
+.features__title {
+    font-weight: 500;
+    color: #3D4F9F;
+    text-align: center;
+}
+
+.features__par {
+    margin-top: 173px;
+    margin-bottom: 20px;
+    font-size: 10px;
+    line-height: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.features__title {
+    font-size: 24px;
+    line-height: 30px;
+}
+
+.features__cart {
+    display: flex;
+    justify-content: space-between;
+}
+
+.features-img {
+    margin-top: 92px;
+    margin-bottom: 32px;
+    margin-left: 36px;
+}
+
+.features__h4 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 25px;
+    text-align: center;
+    color: #4074F8;
+}
+
+.features-par {
+    margin-top: 25px;
+    max-width: 140px;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 19px;
+    text-align: center;
+    color: #ADB3CB;
+    margin-bottom: 92px;
+}
+
+.features__sub {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 171px;
+}
+
+.features-hr {
+    margin: 0 16px 0 16px;
+    width: 15px;
+    height: 0;
+    border: 1px solid #DAE4FE;
+    background-color: #DAE4FE;
+    align-self: center;
+}
+
+.featurs-or {
+    align-self: center;
+    font-weight: 600;
+    font-size: 11px;
+    line-height: 19px;
+    text-align: center;
+    color: #ADB3CB;
+}
+
+.features__btn-right {
+    padding: 13px 16px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    color: #D43F3F;
+    background-color: #FFD7D7;
+    border-radius: 2px;
+    border: none;
+}
+
+.features__btn-left {
+    padding: 13px 16px;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 16px;
+    color: #3A79FF;
+    background-color: #D2E1FF;
+    border-radius: 2px;
+    border: none;
 }
