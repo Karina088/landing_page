@@ -67,7 +67,23 @@ function scrollTo(element) {
 }
 const link = document.querySelector('.link-features');
 const featuresClass = document.querySelector('.features');
+const linkBlog = document.querySelector('.link-blog');
+const blogEl = document.querySelector('.blog');
 
-link.addEventListener('click', () => {
+link.addEventListener('pointerover', () => {
     scrollTo(featuresClass);
 });
+linkBlog.addEventListener('pointerover', () => {
+    scrollTo(blogEl);
+});
+
+
+
+
+// проверяла на соотвествие размеров с макетом
+const features = document.querySelector('.features');
+console.log(features.offsetHeight);
+console.log(features.offsetWidth);
+const blog = document.querySelector('.blog__slider');
+console.log(blog.offsetWidth);
+

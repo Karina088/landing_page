@@ -15,31 +15,31 @@
 
 <body>
 
-    <nav class="header__content ">
+    <header class="header__content ">
         <div class="logo">
             <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="13" cy="13" r="13" fill="#5E81FE" />
             </svg>
         </div>
-        <div class="header__list">
+        <nav class="header__list">
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a class="link-blog" href="#">Blog</a></li>
                 <li><a class="link-features" href="#">Features</a></li>
                 <li><a href="#">Pricing</a></li>
                 <li><a href="#">Documentation</a></li>
             </ul>
-        </div>
-        <div class="header__social-media">
+        </nav>
+        <nav class="header__social-media">
             <a href="#"><img src="img/facebook.jpg" alt="facebook icon"></a>
             <a href="#"><img src="img/telegram.jpg" alt="telegram icon"></a>
             <a href="#"><img src="img/twitter.jpg" alt="twitter icon"></a>
             <a href="#"><img src="img/m.jpg" alt="icon"></a>
             <button class="header__btn">Get started</button>
-        </div>
-    </nav>
+        </nav>
+    </header>
 
-    <div class="content">
+    <main class="content">
         <div class="content__text">
             <p class="content-par">PLAN YOUR LIFE</p>
             <h1 class="content__h1">Increase your <span>productivity</span></h1>
@@ -55,7 +55,7 @@
             <img class="content__line" src="img/line.svg" alt="line photo">
             <div class="flipping"></div>
         </div>
-    </div>
+    </main>
 
     <div class="costumers">
         <div class="costumers-logo container">
@@ -102,7 +102,8 @@
             <div class="features-page">
                 <img class="features-img" src="img/features/2.svg" alt="photo">
                 <h4 class="features__h4">Files</h4>
-                <p class="features-par">No vim nulla vitae intellegat. Ei enim error ius, solet atomorum conceptam ex
+                <p class="features-par">No vim nulla vitae intellegat. Ei enim error ius, solet atomorum conceptam
+                    ex
                     has.</p>
             </div>
             <div class="features-page">
@@ -117,21 +118,62 @@
                 </p>
             </div>
         </div>
-        <div class="features__sub">
-            <form action="https://www.yandex.ru/pogoda/moscow" method="get" target="_blank">
-                <button type="submit" class="features__btn-right">Read more</button>
-            </form>
+        <div class="features__transition">
+
+            <a href="main.html" class="features__links" target="_blank"><span class="features_span">Read
+                    more</span></a>
+
             <hr class="features-hr">
             <p class="featurs-or">OR</p>
             <hr class="features-hr">
-            <form action="#">
-                <button type="submit" class="features__btn-left" formaction="https://www.yandex.ru/pogoda/moscow">Get
-                    started</button>
-            </form>
 
+            <a href="main.html" class="features__link" target="_blank"><span class="features-span">Get
+                    started</span></a>
         </div>
     </div>
 
+    <div class="stats">
+        <div class="stats__right">
+            <img src="img/stats/reting.svg" alt="reting icon photo">
+            <p class="stats__right-par">89%</p>
+            <h4 class="stats__right-title">Customers who have increased their productivity</h4>
+        </div>
+        <div class="stats__left">
+            <img src="img/stats/people.svg" alt="people icon photo">
+            <p class="stats__left-par">3123</p>
+            <h4 class="stats__left-title">Users who have used our application</h4>
+        </div>
+    </div>
+
+    <div class="blog">
+        <p class="blog__par">OUR RESOURCES</p>
+        <h4 class="blog__h4">Start reading our blog</h4>
+        <img src="img/blog/arrowLeft.svg" alt="arrow photo">
+        <article>
+            <div class="blog__img">
+                <img src="img/blog/btn_search.svg" alt="search photo">
+                <img src="img/blog/1.svg" alt="photo">
+                <img src="img/blog/2.svg" alt="photo">
+                <img src="img/blog/3.svg" alt="photo">
+            </div>
+            <div class="blog__info-text">
+                <h5 class="blog__info-h5">How to&nbsp;start planning</h5>
+                <p class="blog__info-par">Quidam vocibus eum&nbsp;ne, erat consectetuer voluptatibus ut&nbsp;nam.
+                    Eu&nbsp;usu vidit tractatos, vero tractatos ius&nbsp;an, in&nbsp;mel diceret persecuti. Natum
+                    petentium principes mei&nbsp;ea. Tota everti periculis vis&nbsp;ei, quas tibique pro&nbsp;at, eos
+                    ut&nbsp;decore ...
+                </p>
+                <div class="blog__info">
+                    <a href="#" class="blog__info-link"><span class="blog__info-span">Read now</span></a>
+                    <p class="blog__info-p">Add to your bookmarks</p>
+                </div>
+            </div>
+        </article>
+        <img src="img/blog/arrowRight.svg" alt="arrow photo">
+        <div class="blog__circle">
+            <span></span><span></span><span></span>
+        </div>
+    </div>
 
     <script src="script.js"></script>
 
