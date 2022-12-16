@@ -84,6 +84,5 @@ linkBlog.addEventListener('pointerover', () => {
 const features = document.querySelector('.features');
 console.log(features.offsetHeight);
 console.log(features.offsetWidth);
-const blog = document.querySelector('.blog__slider');
-console.log(blog.offsetWidth);
+
 

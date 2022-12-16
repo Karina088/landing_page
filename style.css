@@ -584,6 +584,8 @@ header {
 
 article {
     display: flex;
+    justify-content: space-around;
+    padding: 63px 0 64px 0;
     max-width: 958px;
     margin: 0 auto;
     background-color: #FFFFFF;
@@ -591,11 +593,27 @@ article {
     box-shadow: 0px 15px 50px #EFF4FF;
 }
 
+figure {
+    max-width: 407px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, auto);
+    gap: 12px;
+}
+
+figure>img {
+    border-radius: 5px;
+}
+
+.figure-1 {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+}
+
 .blog__info-text {
-    justify-content: flex-end;
     max-width: 408px;
-    padding-top: 63px;
-    margin-right: 41px;
+
+
 }
 
 .blog__info-h5 {
