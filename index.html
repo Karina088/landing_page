@@ -151,9 +151,9 @@
 
         <article>
             <figure>
-                <img class="figure-1" src="img/blog/1.jpg" alt="photo">
-                <img src="img/blog/2.jpg" alt="photo">
-                <img src="img/blog/3.jpg" alt="photo">
+                <img id="change_image" class="figure-img figure1" src="img/blog/1.jpg" alt="photo">
+                <img class="figure-img" src="img/blog/2.jpg" alt="photo">
+                <img id="change_image_3" class="figure-img" src="img/blog/3.jpg" alt="photo">
             </figure>
             <div class="blog__info-text">
                 <h5 class="blog__info-h5">How to&nbsp;start planning</h5>
@@ -170,8 +170,10 @@
         </article>
 
         <div class="blog__arrow">
-            <img src="img/blog/arrowLeft.svg" alt="arrow photo">
-            <img src="img/blog/arrowRight.svg" alt="arrow photo">
+            <button class="btn_arrow" onclick="arrowLeft()"><img src="img/blog/arrowLeft.svg"
+                    alt="arrow photo"></button>
+            <button class="btn_arrow" onclick="arrowRight()"><img src="img/blog/arrowRight.svg"
+                    alt="arrow photo"></button>
         </div>
 
         <div class="blog__circle">
