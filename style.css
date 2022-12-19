@@ -612,8 +612,6 @@ figure>img {
 
 .blog__info-text {
     max-width: 408px;
-
-
 }
 
 .blog__info-h5 {
@@ -657,4 +655,30 @@ figure>img {
     font-size: 13px;
     line-height: 16px;
     color: #A6B6DA;
+}
+
+.blog__arrow {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.blog__circle {
+    padding: 101px 0 104px 0;
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+}
+
+.blog__circle-balls {
+    width: 8px;
+    height: 8px;
+    border-radius: 5px;
+    background-color: #D1D6E3;
+}
+
+.balls-color {
+    background-color: #5283FF;
 }
