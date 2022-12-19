@@ -687,3 +687,8 @@ figure>img {
 .balls-color {
     background-color: #5283FF;
 }
+
+.swiper {
+    width: 600px;
+    height: 300px;
+}

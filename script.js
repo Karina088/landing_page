@@ -103,7 +103,6 @@ function arrowLeft() {
     change_image_3.src = 'img/blog/' + arr2[theNum] + '.jpg';
 }
 
-
 // проверяла на соотвествие размеров с макетом
 const features = document.querySelector('.features');
 console.log(features.offsetHeight);
