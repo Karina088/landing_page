@@ -77,33 +77,8 @@ linkBlog.addEventListener('pointerover', () => {
     scrollTo(blogEl);
 });
 
-// слайд с картинками в блоке blog>figure
-let theNum = "0";
-
-const arr = ['1', '5', '4', '7'];
-const arr2 = ['3', '8', '6', '8'];
-
-function arrowRight() {
-    theNum++;
-
-    if (theNum == arr.length && arr2.length) {
-        theNum = "0";
-    }
-    change_image.src = 'img/blog/' + arr[theNum] + '.jpg';
-    change_image_3.src = 'img/blog/' + arr2[theNum] + '.jpg';
-}
-
-function arrowLeft() {
-    theNum--;
-    if (theNum == "-1") {
-        theNum = arr.length - 1 && (theNum = arr2.length - 1);
-    } console.log(theNum);
-
-    change_image.src = 'img/blog/' + arr[theNum] + '.jpg';
-    change_image_3.src = 'img/blog/' + arr2[theNum] + '.jpg';
-}
 
 // проверяла на соотвествие размеров с макетом
-const features = document.querySelector('.features');
-console.log(features.offsetHeight);
-console.log(features.offsetWidth);
+const swiperel = document.querySelector('.swiper-slide');
+console.log(swiperel.offsetHeight);
+console.log(swiperel.offsetWidth);

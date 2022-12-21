@@ -560,7 +560,7 @@ header {
 }
 
 .blog {
-    padding-top: 104px;
+    padding: 104px 0 104px 0;
     background-color: #F5F8FF;
 }
 
@@ -610,6 +610,18 @@ figure>img {
     grid-row: 1 / 3;
 }
 
+.swiper-wrapper {
+    margin-bottom: 102px;
+}
+
+.swiper-button-prev {
+    margin-left: 143px;
+}
+
+.swiper-button-next {
+    margin-right: 143px;
+}
+
 .blog__info-text {
     max-width: 408px;
 }
@@ -655,40 +667,4 @@ figure>img {
     font-size: 13px;
     line-height: 16px;
     color: #A6B6DA;
-}
-
-.blog__arrow {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    max-width: 1180px;
-    margin: 0 auto;
-}
-
-.btn_arrow {
-    border: none;
-    background: none;
-}
-
-.blog__circle {
-    padding: 101px 0 104px 0;
-    display: flex;
-    justify-content: center;
-    gap: 12px;
-}
-
-.blog__circle-balls {
-    width: 8px;
-    height: 8px;
-    border-radius: 5px;
-    background-color: #D1D6E3;
-}
-
-.balls-color {
-    background-color: #5283FF;
-}
-
-.swiper {
-    width: 600px;
-    height: 300px;
 }
