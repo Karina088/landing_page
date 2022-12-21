@@ -79,6 +79,6 @@ linkBlog.addEventListener('pointerover', () => {
 
 
 // проверяла на соотвествие размеров с макетом
-const swiperel = document.querySelector('.swiper-slide');
+const swiperel = document.querySelector('.swiper-quotes');
 console.log(swiperel.offsetHeight);
 console.log(swiperel.offsetWidth);
