@@ -3,7 +3,7 @@
 const btnEl = document.getElementsByClassName('faq-collapse__btn');
 
 for (let i = 0; i < btnEl.length; i++) {
-    btnEl[i].addEventListener("click", function () {
+    btnEl[i].addEventListener("pointerdown", function () {
         this.classList.toggle("faq-active");
         let content = this.nextElementSibling;
         if (content.style.maxHeight) {
@@ -13,3 +13,9 @@ for (let i = 0; i < btnEl.length; i++) {
         }
     })
 }
+
+document.querySelectorAll('.faq__link')
+    .forEach((el) =>
+        el.addEventListener("pointermove", () => {
+            el.classList.toggle("faq__link-change");
+        }));
