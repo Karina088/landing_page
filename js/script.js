@@ -69,6 +69,8 @@ const link = document.querySelector('.link-features');
 const featuresClass = document.querySelector('.features');
 const linkBlog = document.querySelector('.link-blog');
 const blogEl = document.querySelector('.blog');
+const linkPricing = document.querySelector('.link-get-started');
+const getStartedEl = document.querySelector('.get-started');
 
 link.addEventListener('pointerover', () => {
     scrollTo(featuresClass);
@@ -76,9 +78,12 @@ link.addEventListener('pointerover', () => {
 linkBlog.addEventListener('pointerover', () => {
     scrollTo(blogEl);
 });
+linkPricing.addEventListener('pointerover', () => {
+    scrollTo(getStartedEl);
+});
 
 
 // проверяла на соотвествие размеров с макетом
-const swiperel = document.querySelector('.swiper-quotes');
+const swiperel = document.querySelector('.get-started');
 console.log(swiperel.offsetHeight);
 console.log(swiperel.offsetWidth);
