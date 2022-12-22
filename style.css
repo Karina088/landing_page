@@ -848,16 +848,9 @@ figure>img {
     color: #FFFFFF;
 }
 
-.faq__span {
-    font-weight: 500;
-    font-size: 13px;
-    line-height: 16px;
-    color: #7382A3;
-}
-
 .get-started {
+    padding: 91px 0 91px 0;
     background: linear-gradient(229.32deg, #6888FF 12.77%, #5E80FF 73.11%);
-    padding-top: 91px;
     text-align: center;
 }
 
@@ -877,10 +870,6 @@ figure>img {
     color: #FFFFFF;
 }
 
-.get-started__span {
-    color: #FFFFFF;
-}
-
 .get-started-par {
     margin: 0 auto;
     max-width: 712px;
@@ -892,7 +881,7 @@ figure>img {
 }
 
 .get-started__links {
-    padding: 28px 0 91px 0;
+    margin-top: 28px;
     text-decoration: none;
     font-size: 13px;
     line-height: 16px;
