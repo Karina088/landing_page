@@ -56,6 +56,15 @@ function detectInputType(event) {
     }
 }
 
+const featuresLinksEl = document.querySelector('.features__links');
+const featuresLinkEl = document.querySelector('.features__link');
+featuresLinksEl.addEventListener('touchmove', () => {
+    featuresLinksEl.classList.toggle('features__links-active');
+})
+featuresLinkEl.addEventListener('touchmove', () => {
+    featuresLinkEl.classList.toggle('features__link-active');
+})
+
 
 // прокрутка по ссылкам
 function scrollTo(element) {
