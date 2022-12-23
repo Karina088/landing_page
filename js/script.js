@@ -30,9 +30,11 @@ custLogo.forEach((el) => {
 // document.querySelectorAll('form')
 //     .forEach(el => el.addEventListener('click', (event) => event.preventDefault()));
 
-document.querySelector('.illustration__form').addEventListener('click', (event) => event.preventDefault());
+document.querySelector('.illustration__form')
+    .addEventListener('click', (event) =>
+        event.preventDefault());
 
-
+// связала кнопку с изображениями в блоке illustration
 const btnIllustrator = document.querySelector('.illustration__btn');
 const imgIllustrator = document.querySelector('.illustration__img');
 
@@ -56,10 +58,12 @@ function detectInputType(event) {
     }
 }
 
-const featuresLinksEl = document.querySelector('.features__links');
+// link for block fearures__transition
+const featuresLinkLeftEl = document.querySelector('.features__left');
 const featuresLinkEl = document.querySelector('.features__link');
-featuresLinksEl.addEventListener('touchmove', () => {
-    featuresLinksEl.classList.toggle('features__links-active');
+
+featuresLinkLeftEl.addEventListener('touchmove', () => {
+    featuresLinkLeftEl.classList.toggle('features__left-active');
 })
 featuresLinkEl.addEventListener('touchmove', () => {
     featuresLinkEl.classList.toggle('features__link-active');

@@ -265,14 +265,20 @@ header {
     line-height: 16px;
     color: #FFFFFF;
     border: none;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
     background: #4C85FF;
     box-shadow: 0px 5px 15px rgba(188, 199, 255, 0.75);
-
     transition: all 0.5s ease;
+    cursor: pointer;
 }
 
 .color {
-    background-color: #3D4F9F;
+    background-color: #663dff;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, .5),
+        7px 7px 20px 0px rgba(0, 0, 0, .1),
+        4px 4px 5px 0px rgba(0, 0, 0, .1);
+    transition: all 0.3s ease;
 }
 
 .arrow {
@@ -285,11 +291,27 @@ header {
     font-size: 13px;
     line-height: 16px;
     color: #ADB4D2;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
     background-color: #F5F8FF;
     border: 1px solid #D1D1E4;
     display: inline-block;
     margin-right: 0;
     transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.illustration-btn:hover {
+    border: none;
+    color: #4C85FF;
+    box-shadow:
+        -7px -7px 20px 0px rgba(255, 255, 255, .9),
+        -4px -4px 5px 0px rgba(255, 255, 255, .9),
+        7px 7px 20px 0px rgba(0, 0, 0, .2),
+        4px 4px 5px 0px rgba(0, 0, 0, .3);
+    transition: all 0.3s ease;
+    background: transparent;
+    text-shadow: 3px 4px 4px rgba(99, 170, 246, 0.501);
 }
 
 .illustration__form {
@@ -474,7 +496,7 @@ header {
     color: #ADB3CB;
 }
 
-.features__links {
+.features__left {
     padding: 13px 16px;
     text-decoration: none;
     background-color: #FFD7D7;
@@ -482,8 +504,8 @@ header {
     border: none;
 }
 
-.features__links:hover,
-.features__links-active {
+.features__left:hover,
+.features__left-active {
     background: linear-gradient(0deg, rgba(225, 44, 68, 0.633) 0%, rgb(248, 195, 208) 100%);
     box-shadow: 3px 3px 6px 0 rgba(255, 255, 255, .5),
         -3px -3px 6px 0 rgba(96, 14, 21, 0.796),
@@ -672,14 +694,19 @@ figure>img {
     text-decoration: none;
     background: #D2E1FF;
     border-radius: 2px;
-}
-
-.blog__info-span {
     font-weight: 700;
     font-size: 13px;
     line-height: 16px;
     color: #3A79FF;
 }
+
+.blog__info-link:hover {
+    color: #F1F5FF;
+    background-color: #6C8BFF;
+    box-shadow: 0px 5px 45px rgba(151, 175, 227, 0.1);
+    transition: all .3s ease;
+}
+
 
 .blog__info-p {
     align-self: center;
@@ -687,6 +714,12 @@ figure>img {
     font-size: 13px;
     line-height: 16px;
     color: #A6B6DA;
+    padding: 13px 15px;
+    text-decoration: none;
+}
+
+.blog__info-p:hover {
+    text-decoration: underline;
 }
 
 .quotes {
