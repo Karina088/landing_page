@@ -16,6 +16,6 @@ for (let i = 0; i < btnEl.length; i++) {
 
 document.querySelectorAll('.faq__link')
     .forEach((el) =>
-        el.addEventListener("pointermove", () => {
+        el.addEventListener("pointerdown", () => {
             el.classList.toggle("faq__link-change");
         }));

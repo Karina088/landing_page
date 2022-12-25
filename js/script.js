@@ -27,12 +27,26 @@ custLogo.forEach((el) => {
 });
 
 
-// document.querySelectorAll('form')
-//     .forEach(el => el.addEventListener('click', (event) => event.preventDefault()));
+document.querySelectorAll('form')
+    .forEach(el => el.addEventListener('click',
+        (event) => event.preventDefault()));
 
-document.querySelector('.illustration__form')
+// document.querySelector('.illustration__form')
+//     .addEventListener('click', (event) =>
+//         event.preventDefault());
+
+document.querySelector('.get-started__links')
     .addEventListener('click', (event) =>
         event.preventDefault());
+
+document.querySelectorAll('.blog__info-p')
+    .forEach(el => el.addEventListener('click',
+        (event) => event.preventDefault()));
+
+// document.querySelector('.newletter__form')
+//     .addEventListener('click', (e) => {
+//         e.preventDefault();
+//     });
 
 // связала кнопку с изображениями в блоке illustration
 const btnIllustrator = document.querySelector('.illustration__btn');
@@ -97,6 +111,6 @@ linkPricing.addEventListener('pointerover', () => {
 
 
 // проверяла на соотвествие размеров с макетом
-const swiperel = document.querySelector('.get-started');
+const swiperel = document.querySelector('.newletter__info');
 console.log(swiperel.offsetHeight);
 console.log(swiperel.offsetWidth);
