@@ -1031,8 +1031,8 @@ input[type="submit"]:hover {
 }
 
 footer {
-    padding: 101px 0 160px 0;
-    background: #FFFFFF;
+    padding-top: 101px;
+    background-color: #FFFFFF;
 }
 
 .menu__footer {
@@ -1043,7 +1043,7 @@ footer {
 }
 
 .copyright {
-    padding: 42px 0 0 99px;
+    padding: 42px 0 93px 99px;
 }
 
 .copyright-par {

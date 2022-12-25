@@ -117,6 +117,6 @@ linkPricing.addEventListener('pointerover', () => {
 
 
 // проверяла на соотвествие размеров с макетом
-const swiperel = document.querySelector('.newletter__info');
+const swiperel = document.querySelector('footer');
 console.log(swiperel.offsetHeight);
 console.log(swiperel.offsetWidth);
