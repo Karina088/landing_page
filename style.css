@@ -26,7 +26,8 @@ span {
 }
 
 .center {
-    width: calc(100% - 117px);
+    max-width: 1206px;
+    margin: 0 auto;
 }
 
 header {
@@ -35,28 +36,26 @@ header {
     flex-flow: row nowrap;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 27px;
-    margin-bottom: 27px;
+    padding: 27px 0 28px 0;
 }
 
 .logo {
     width: 26px;
     height: 26px;
     margin-right: 73px;
-    margin-left: 117px;
 }
 
-.header__list {
+.menu__list {
     flex-grow: 1;
 }
 
-.header__list ul {
+.menu__list ul {
     display: flex;
     flex-flow: row nowrap;
     list-style-type: none;
 }
 
-.header__list ul>li a {
+.menu__list ul>li a {
     text-decoration: none;
     color: #697CA6;
     text-shadow: 0px 0px 5px #E6E6E6;
@@ -67,35 +66,34 @@ header {
     text-transform: capitalize;
 }
 
-.header__list ul>li a:hover {
+.menu__list ul>li a:hover {
     font-weight: 700;
     color: #5E81FE;
     text-shadow: 0px 0px 5px #E6E6E6;
 }
 
-.header__list li {
+.menu__list li {
     margin-right: 42px;
 }
 
-.header__list li:last-child {
+.menu__list li:last-child {
     margin-right: 0;
 }
 
-.header__social-media {
+.menu__social-media {
     display: flex;
     align-items: center;
-    margin-right: 117px;
 }
 
-.header__social-media a {
+.menu__social-media a {
     margin-right: 34px;
 }
 
-.header__social-media a:hover {
+.menu__social-media a:hover {
     filter: saturate(11);
 }
 
-.header__btn {
+.menu__btn {
     margin-left: 10px;
     padding: 13px 16px;
     font-weight: 700;
@@ -117,7 +115,7 @@ header {
 
 .content__text {
     text-align: center;
-    /* position: relative; */
+
 }
 
 .content-par {
@@ -1003,7 +1001,7 @@ figure>img {
 
 input[type="email"] {
     border: none;
-    padding: 21px 128px 21px 23px;
+    padding: 21px 98px 21px 23px;
     background-color: #EFEFF7;
     border-radius: 5px;
     font-weight: 700;
@@ -1030,4 +1028,32 @@ input[type="submit"]:hover {
         inset 1px 4px 3px rgba(193, 189, 238, 0.329),
         inset 2px 4px 3px rgba(198, 193, 246, 0.53);
 
+}
+
+footer {
+    padding: 101px 0 160px 0;
+    background: #FFFFFF;
+}
+
+.menu__footer {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.copyright {
+    padding: 42px 0 0 99px;
+}
+
+.copyright-par {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.05em;
+    text-transform: capitalize;
+    color: #AEB8D0;
 }

@@ -1,13 +1,19 @@
 'use strict';
 
-const headerBtn = document.querySelector('.header__btn');
-headerBtn.addEventListener('pointerover', (e) => {
-    e.target.style.cssText = `color: #3A79FF;
+const menuBtn = document.querySelectorAll('.menu__btn');
+menuBtn.forEach(el => el.addEventListener('pointerover',
+    (e) => {
+        e.target.style.cssText =
+            `color: #3A79FF;
     background-color: #D2E1FF;`
-});
-headerBtn.addEventListener('pointerout', (e) => {
-    e.target.style.cssText = `color: #697CA6;
-    background-color: #D6DAE5;` });
+    }));
+
+menuBtn.forEach(el => el.addEventListener('pointerout',
+    (e) => {
+        e.target.style.cssText =
+            `color: #697CA6;
+    background-color: #D6DAE5;`
+    }));
 
 
 const contentBtn = document.querySelector('.content__btn');
