@@ -115,7 +115,6 @@ header {
 
 .content__text {
     text-align: center;
-
 }
 
 .content-par {
@@ -224,8 +223,9 @@ header {
     padding-bottom: 58px;
 }
 
+/* ---------------------------illustation------------------------------------- */
 .illustration {
-    background: #F5F8FF;
+    background-color: #F5F8FF;
     border-bottom: 1px solid #D8E3FE;
 }
 
@@ -314,7 +314,7 @@ header {
 
 .illustration__form {
     letter-spacing: -4.5px;
-    margin-bottom: 269px;
+    margin-bottom: 216px;
 }
 
 .illustration__img {
@@ -412,6 +412,7 @@ header {
     }
 }
 
+/*------------------------------------ features------------------------------------------------ */
 .features {
     max-width: 760px;
     margin: 0 auto;
@@ -546,6 +547,8 @@ header {
     transition: all .2s;
 }
 
+/*------------------------------- stats ----------------------------------------------- */
+
 .stats {
     display: flex;
 }
@@ -598,6 +601,8 @@ header {
     letter-spacing: 0.03em;
     color: #5E80FF;
 }
+
+/*-------------------------------------------- blog ---------------------------------------------- */
 
 .blog {
     padding: 104px 0 104px 0;
@@ -662,6 +667,8 @@ figure>img {
     margin-right: 143px;
 }
 
+/* -------------------------- blog ----------------------------------------------------- */
+
 .blog__info-text {
     max-width: 408px;
 }
@@ -720,6 +727,8 @@ figure>img {
     text-decoration: underline;
 }
 
+/* ------------------------------------  quotes --------------------------------------------- */
+
 .quotes {
     border-top: 1px solid #D8E3FE;
     border-bottom: 1px solid #D8E3FE;
@@ -758,7 +767,6 @@ figure>img {
     line-height: 23px;
     letter-spacing: 0.03em;
     color: #A4ABC8;
-    max-width: 323px;
 }
 
 .swiper-quotes {
@@ -1027,7 +1035,6 @@ input[type="submit"]:hover {
     box-shadow: 3px 5px 15px rgba(41, 34, 120, 0.67),
         inset 1px 4px 3px rgba(193, 189, 238, 0.329),
         inset 2px 4px 3px rgba(198, 193, 246, 0.53);
-
 }
 
 footer {

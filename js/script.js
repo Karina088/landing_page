@@ -37,9 +37,6 @@ document.querySelectorAll('form')
     .forEach(el => el.addEventListener('click',
         (event) => event.preventDefault()));
 
-// document.querySelector('.illustration__form')
-//     .addEventListener('click', (event) =>
-//         event.preventDefault());
 
 document.querySelector('.get-started__links')
     .addEventListener('click', (event) =>
@@ -49,10 +46,6 @@ document.querySelectorAll('.blog__info-p')
     .forEach(el => el.addEventListener('click',
         (event) => event.preventDefault()));
 
-// document.querySelector('.newletter__form')
-//     .addEventListener('click', (e) => {
-//         e.preventDefault();
-//     });
 
 // связала кнопку с изображениями в блоке illustration
 const btnIllustrator = document.querySelector('.illustration__btn');
@@ -115,8 +108,7 @@ linkPricing.addEventListener('pointerover', () => {
     scrollTo(getStartedEl);
 });
 
-
 // проверяла на соотвествие размеров с макетом
-const swiperel = document.querySelector('footer');
+const swiperel = document.querySelector('.illustration');
 console.log(swiperel.offsetHeight);
 console.log(swiperel.offsetWidth);
