@@ -101,8 +101,7 @@
     }
 
     .costumers-logo>img {
-        width: 11%;
-        height: 11%;
+        width: 14%;
     }
 
     .content__par {
@@ -198,17 +197,149 @@
 
 @media (max-width: 767px) {
 
-    img.menu-icon {
+    header {
+        padding: 24px 0 24px 0;
+    }
+
+    footer {
+        padding-top: 80px;
+    }
+
+    img.menu-icon,
+    img.menu-icon-footer {
         display: none;
     }
 
-}
+    .copyright {
+        background: url(img/facebook.jpg)440px center no-repeat, url(img/telegram.jpg) 460px center no-repeat, url(img/twitter.jpg) 480px center no-repeat, url(img/m.jpg) right center no-repeat;
+        padding: 42px 0 80px 80px;
+    }
 
-@media screen and (max-width: 479px) {
-    /* стили для телефонов - начало */
+    .center {
+        max-width: 524px;
+    }
 
-}
+    .menu__list li {
+        margin-right: 16px;
+    }
 
-@media (max-width: 525px) {}
+    .menu__list ul>li a {
+        font-size: 11px;
+        line-height: 12px;
+        letter-spacing: 0.03em;
+    }
 
-@media (min-width: 340px) {}
+    .menu__btn {
+        padding: 10px 15px;
+        line-height: 13px;
+    }
+
+    .content__h1 {
+        padding-top: 14px;
+        padding-bottom: 26px;
+        font-size: 42px;
+        line-height: 50px;
+    }
+
+    .content__par {
+        font-size: 12px;
+        line-height: 26px;
+    }
+
+    .content__btn {
+        top: 49%;
+        width: 38px;
+        height: 38px;
+    }
+
+    .content__btn-switch {
+        width: 18%;
+    }
+
+    .costumers-logo {
+        justify-content: space-between;
+    }
+
+    .container {
+        max-width: 525px;
+    }
+
+    .illustration {
+        padding-bottom: 248px;
+    }
+
+    .illustration-par {
+        padding-top: 108px;
+    }
+
+    .illustration__h2 {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .illustration__h2,
+    .illustration-par,
+    .illustration__par {
+        text-align: left;
+    }
+
+    .illustration__img {
+        top: 440px;
+    }
+
+    .illustration__form {
+        padding-bottom: 22px;
+        padding-top: 0px;
+    }
+
+    .illustration__btn {
+        padding: 11px 22px;
+        font-size: 11px;
+    }
+
+    .illustration-btn {
+        padding: 10px 22px;
+        font-size: 11px;
+    }
+
+    .illustration__par {
+        font-size: 14px;
+    }
+
+    img.illustration-phone-1 {
+        width: 20%;
+
+    }
+
+    img.illustration-phone-2 {
+        width: 90%;
+    }
+
+    img.illustration-phone-3 {
+        width: 40%;
+        left: 380px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media screen and (max-width: 479px) {
+        /* стили для телефонов - начало */
+
+    }
+
+    @media (max-width: 525px) {}
+
+    @media (min-width: 340px) {}
