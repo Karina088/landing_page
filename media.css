@@ -237,13 +237,14 @@
     .content__h1 {
         padding-top: 14px;
         padding-bottom: 26px;
-        font-size: 42px;
+        font-size: 38px;
         line-height: 50px;
     }
 
     .content__par {
-        font-size: 12px;
-        line-height: 26px;
+        font-size: 11px;
+        line-height: 24px;
+        max-width: 420px;
     }
 
     .content__btn {
@@ -261,7 +262,7 @@
     }
 
     .container {
-        max-width: 525px;
+        max-width: 520px;
     }
 
     .illustration {
@@ -308,7 +309,6 @@
 
     img.illustration-phone-1 {
         width: 20%;
-
     }
 
     img.illustration-phone-2 {
@@ -320,13 +320,208 @@
         left: 380px;
     }
 
+    .features__cart {
+        justify-content: space-around;
+    }
+
+    img.features-img {
+        width: 40%;
+    }
+
+    .features-par {
+        max-width: 110px;
+        font-size: 10px;
+    }
+
+    img.stats__img-right {
+        width: 20%;
+    }
+
+    img.stats__img-left {
+        width: 23%;
+    }
+
+    .stats__left-par,
+    .stats__right-par {
+        padding-top: 18px;
+        font-size: 36px;
+    }
+
+    .stats__left-title,
+    .stats__right-title {
+        font-size: 14px;
+    }
+
+    article {
+        max-width: 522px;
+    }
+
+    figure {
+        max-width: 247px;
+        grid-template-columns: repeat(1, 2fr);
+    }
 
 
+    figure-img-mini__center {
+        grid-column: 1 / 2;
+        grid-row: 3 / 1;
+    }
 
+    /* .figure-img-mini__last {
+        grid-auto-columns: 1 /2;
+        grid-auto-rows: 3 / 4;
+    } */
 
+    img.figure1 {
+        height: 200px;
+    }
 
+    img.figure-img-mini {
+        width: 90px;
+        height: 80px;
+    }
 
+    .blog__info-text {
+        max-width: 208px;
+    }
 
+    .blog__info-h5 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .blog__info-par {
+        padding: 21px 0 21px 0;
+        font-size: 9px;
+        line-height: 16px;
+    }
+
+    .blog__info-link {
+        margin-right: 18px;
+        padding: 11px 14px;
+        font-size: 8px;
+        line-height: 16px;
+
+    }
+
+    .blog__info-p {
+        font-size: 11px;
+        line-height: 14px;
+        padding: 8px 8px;
+    }
+
+    .quotes__content.container {
+        max-width: 580px;
+    }
+
+    .quotes__text {
+        margin: 146px 12px 146px 0;
+    }
+
+    .quotes-par {
+        font-size: 8px;
+    }
+
+    .quotes-title {
+        width: 280px;
+        padding: 26px 0 14px 0;
+        font-size: 28px;
+        line-height: 35px;
+    }
+
+    .quotes__par {
+        font-weight: 400;
+        font-size: 11px;
+        line-height: 23px;
+        letter-spacing: 0.02em;
+    }
+
+    p.swiper-par {
+        padding: 28px;
+        font-size: 10px;
+    }
+
+    .swiper__content {
+        background-size: 13%;
+    }
+
+    .faq-collapse {
+        text-align: center;
+    }
+
+    .faq-collapse__btn {
+        font-size: 13px;
+        line-height: 19px;
+        padding: 17px 0 15px 24px;
+        max-width: 520px;
+    }
+
+    .faq-collapse__content {
+        max-width: 520px;
+    }
+
+    .faq-collapse__content-par {
+        padding: 16px 0px 53px 92px;
+        font-size: 9px;
+        line-height: 18px;
+    }
+
+    .faq__link {
+        padding: 12px 9px;
+        font-size: 9px;
+        line-height: 14px;
+    }
+
+    .get-started__par {
+        font-size: 9px;
+    }
+
+    h3.get-started__title {
+        padding: 16px 0 28px 0;
+        font-size: 38px;
+        line-height: 50px;
+    }
+
+    p.get-started-par {
+        max-width: 512px;
+        font-size: 12px;
+        line-height: 22px;
+    }
+
+    .get-started__links {
+        margin-top: 65px;
+        font-size: 11px;
+        line-height: 14px;
+    }
+
+    .newletter__info {
+        flex-direction: column;
+        padding-left: 24px;
+    }
+
+    .newletter__title {
+        font-size: 16px;
+        line-height: 18px;
+    }
+
+    .newletter-par {
+        max-width: 230px;
+        font-size: 10px;
+        line-height: 24px;
+        margin-bottom: 24px;
+    }
+
+    input[type="email"] {
+        padding: 16px 78px 16px 23px;
+        font-size: 11px;
+        line-height: 15px;
+    }
+
+    input[type="submit"] {
+        padding: 16px 42px;
+        font-size: 11px;
+        line-height: 15px;
+    }
 
 
 
@@ -341,5 +536,3 @@
     }
 
     @media (max-width: 525px) {}
-
-    @media (min-width: 340px) {}
