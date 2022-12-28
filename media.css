@@ -539,7 +539,95 @@
 }
 
 
-@media (max-width: 545px) {
+@media (max-width: 535px) {
+    .center {
+        max-width: 375px;
+    }
+
+    .menu {
+        align-items: flex-end;
+    }
+
+    .logo>svg {
+        width: 23px;
+        height: 23px;
+    }
+
+    .menu__btn {
+        margin-left: 148px;
+        font-size: 9px;
+        padding: 6px 12px;
+    }
+
+    .menu-btn {
+        width: 28px;
+        height: 28px;
+        position: relative;
+        z-index: 2;
+        overflow: hidden;
+    }
+
+    .menu-btn span {
+        width: 28px;
+        height: 2px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background-color: #3d4f9f;
+        transform: translate(-50%, -50%);
+        transition: all 0.3s;
+    }
+
+    .menu-btn span:nth-of-type(2) {
+        top: calc(50% - 5px);
+    }
+
+    .menu-btn span:nth-of-type(3) {
+        top: calc(50% + 5px);
+    }
+
+    .menu__list {
+        position: fixed;
+        z-index: 1;
+        top: 80px;
+        left: 0;
+        width: 100%;
+        height: 50%;
+        padding: 15px;
+        background-color: aliceblue;
+        transform: translateX(-100%);
+        transition: transform 0.4s;
+    }
+
+    .menu__list.activeList {
+        transform: translateX(0);
+    }
+
+    .menu-btn.activeList span:first-of-type {
+        transform: translateX(100%);
+    }
+
+    .menu-btn.activeList span:nth-of-type(2) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .menu-btn.activeList span:nth-of-type(3) {
+        top: 50%;
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    .menu__list ul {
+        flex-direction: column;
+    }
+
+    .menu__list ul>li a {
+        margin-left: 26px;
+        font-size: 14px;
+        line-height: 34px;
+        letter-spacing: 0.05em;
+    }
+
     .swipper-button {
         display: none;
     }
@@ -547,7 +635,4 @@
 
 
 
-@media screen and (max-width: 479px) {
-    /* стили для телефонов - начало */
-
-}
+@media (max-width: 375px) {}
