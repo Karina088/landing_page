@@ -244,6 +244,8 @@ header {
     padding-bottom: 27px;
     color: #3D4F9F;
     font-weight: 400;
+    font-size: 36px;
+    line-height: 45px;
 }
 
 .illustration__par {
@@ -445,6 +447,7 @@ header {
     font-family: 'Open Sans';
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .features-img {

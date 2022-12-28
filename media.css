@@ -27,7 +27,6 @@
     }
 
     .content__btn {
-        top: 60%;
         width: 44px;
         height: 44px;
     }
@@ -75,7 +74,6 @@
         top: 70%;
         margin-right: 26px;
     }
-
 }
 
 @media(max-width: 906px) {
@@ -109,7 +107,7 @@
     }
 
     .content__btn {
-        top: 55%;
+        top: 42%;
         width: 42px;
         height: 42px;
     }
@@ -544,6 +542,10 @@
         max-width: 375px;
     }
 
+    .container {
+        max-width: 420px;
+    }
+
     .menu {
         align-items: flex-end;
     }
@@ -591,10 +593,10 @@
         z-index: 1;
         top: 80px;
         left: 0;
-        width: 100%;
+        width: 80%;
         height: 50%;
         padding: 15px;
-        background-color: aliceblue;
+        background-color: #F5F8FF;
         transform: translateX(-100%);
         transition: transform 0.4s;
     }
@@ -628,6 +630,200 @@
         letter-spacing: 0.05em;
     }
 
+    .content-par {
+        font-size: 6px;
+    }
+
+    .content__h1 {
+        font-size: 26px;
+        line-height: 32px;
+    }
+
+    .content__par {
+        font-size: 10px;
+        line-height: 18px;
+        max-width: 320px;
+    }
+
+    .content__btn {
+        top: 46%;
+        width: 25px;
+        height: 25px;
+    }
+
+    .content__btn-switch {
+        width: 21%;
+    }
+
+    .content__line {
+        margin-top: -9%;
+    }
+
+    .costumers-logo {
+        justify-content: space-around;
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    .illustration-par {
+        font-size: 8px;
+        text-align: center;
+    }
+
+    .illustration__h2 {
+        margin-left: 100px;
+        font-size: 24px;
+
+    }
+
+    .illustration__par {
+        font-size: 9px;
+        max-width: 60%;
+        line-height: 24px;
+    }
+
+    .illustration__btn {
+        font-weight: 400;
+        padding: 9px 16px;
+        font-size: 9px;
+        letter-spacing: 0.06em;
+    }
+
+    .illustration-btn {
+        padding: 8px 16px;
+        font-size: 9px;
+        letter-spacing: 0.03em;
+    }
+
+    .illustration__form {
+        display: flex;
+        justify-content: center;
+    }
+
+    img.illustration-phone-1 {
+        width: 24%;
+    }
+
+    img.illustration-phone-2 {
+        width: 100%;
+        left: 60px;
+    }
+
+    img.illustration-phone-3 {
+        left: 280px;
+        width: 43%;
+    }
+
+    .features__cart {
+        margin: 82px 0 62px 0;
+    }
+
+    .features-img {
+        margin: 6px 0 28px 36px;
+    }
+
+    .features-par {
+        margin: 8px 0 0px 0;
+        font-size: 7px;
+        line-height: 16px;
+    }
+
+    .features__left,
+    .features__link {
+        padding: 9px 15px;
+    }
+
+    .features_span,
+    .features-span {
+        font-size: 11px;
+        line-height: 13px;
+    }
+
+    .featurs-or {
+        font-size: 9px;
+    }
+
+    .stats__right {
+        padding: 62px 34px 62px 0;
+    }
+
+    .stats__left-par,
+    .stats__right-par {
+        padding-top: 18px;
+        font-size: 32px;
+    }
+
+    .stats__left-title,
+    .stats__right-title {
+        font-size: 10px;
+        line-height: 18px;
+    }
+
+    .stats__left {
+        padding: 62px 0 62px 34px;
+    }
+
+    article {
+        max-width: 375px;
+    }
+
+    .blog__h4 {
+        padding: 20px 0 72px 0;
+        font-size: 22px;
+        line-height: 22px;
+    }
+
+    figure {
+        max-width: 150px;
+        grid-template-columns: 70px 76px;
+        gap: 8px;
+    }
+
+    img.figure-main {
+        width: 150px;
+        height: 158px;
+    }
+
+    img.figure-img-mini {
+        width: 70px;
+        height: 74px;
+    }
+
+    .blog__info-text {
+        max-width: 158px;
+    }
+
+    .blog__info-h5 {
+        font-size: 22px;
+        line-height: 28px;
+    }
+
+    .blog__info-par {
+        font-size: 8px;
+        line-height: 14px;
+    }
+
+    img.figure-img-mini__center {
+        justify-self: start;
+        align-items: start;
+    }
+
+    .blog__info-link {
+        padding: 6px 18px;
+        font-size: 8px;
+    }
+
+    .blog__info-p {
+        margin-top: 6px;
+        font-size: 8px;
+        line-height: 12px;
+    }
+
+
+
+
+
+
     .swipper-button {
         display: none;
     }
@@ -635,4 +831,8 @@
 
 
 
-@media (max-width: 375px) {}
+@media (max-width: 375px) {
+    .costumers-logo>img {
+        width: 13%;
+    }
+}
