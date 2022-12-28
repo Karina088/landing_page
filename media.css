@@ -126,14 +126,14 @@
         max-width: 347px;
     }
 
-    img.figure1 {
+    img.figure-main {
         width: 200px;
-        height: 240px;
+        height: 220px;
     }
 
     img.figure-img-mini {
         width: 100px;
-        height: 110px;
+        height: 100px;
     }
 
     .illustration__img {
@@ -195,7 +195,7 @@
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 804px) {
 
     header {
         padding: 24px 0 24px 0;
@@ -354,26 +354,28 @@
 
     article {
         max-width: 522px;
+        padding: 43px 0 44px 0;
     }
 
     figure {
         max-width: 247px;
-        grid-template-columns: repeat(1, 2fr);
+        grid-template-columns: 90px 90px;
     }
 
-
-    figure-img-mini__center {
-        grid-column: 1 / 2;
-        grid-row: 3 / 1;
+    img.figure-img-mini__center {
+        justify-self: end;
+        align-self: end;
+        grid-column: 3 / 2;
+        grid-row: 4 / 1;
     }
 
-    /* .figure-img-mini__last {
-        grid-auto-columns: 1 /2;
-        grid-auto-rows: 3 / 4;
-    } */
+    img.figure-img-mini__last {
+        justify-self: start;
+    }
 
-    img.figure1 {
-        height: 200px;
+    img.figure-main {
+        width: 190px;
+        height: 170px;
     }
 
     img.figure-img-mini {
@@ -382,12 +384,23 @@
     }
 
     .blog__info-text {
-        max-width: 208px;
+        max-width: 218px;
     }
 
     .blog__info-h5 {
         font-size: 26px;
         line-height: 32px;
+    }
+
+    .blog__info {
+        flex-direction: column;
+    }
+
+    .blog__info-link {
+        align-self: start;
+        padding: 9px 18px;
+        font-size: 10px;
+        line-height: 14px;
     }
 
     .blog__info-par {
@@ -396,19 +409,19 @@
         line-height: 16px;
     }
 
-    .blog__info-link {
-        margin-right: 18px;
-        padding: 11px 14px;
-        font-size: 8px;
-        line-height: 16px;
-
-    }
-
     .blog__info-p {
-        font-size: 11px;
+        margin-top: 9px;
+        align-self: start;
+        font-size: 10px;
         line-height: 14px;
-        padding: 8px 8px;
+        padding: 8px 0 8px 0;
     }
+
+    img.swiper-button-prev,
+    img.swiper-button-next {
+        width: 20px;
+    }
+
 
     .quotes__content.container {
         max-width: 580px;
@@ -523,16 +536,18 @@
         line-height: 15px;
     }
 
+}
 
 
-
-
-
-
-
-    @media screen and (max-width: 479px) {
-        /* стили для телефонов - начало */
-
+@media (max-width: 545px) {
+    .swipper-button {
+        display: none;
     }
+}
 
-    @media (max-width: 525px) {}
+
+
+@media screen and (max-width: 479px) {
+    /* стили для телефонов - начало */
+
+}
