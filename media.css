@@ -538,21 +538,16 @@
 
 
 @media (max-width: 535px) {
-    .center {
-        max-width: 375px;
-    }
-
     .container {
         max-width: 420px;
     }
 
     .menu {
-        align-items: flex-end;
+        justify-content: space-around;
     }
 
-    .logo>svg {
-        width: 23px;
-        height: 23px;
+    .logo {
+        display: none;
     }
 
     .menu__btn {
