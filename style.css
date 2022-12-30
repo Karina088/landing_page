@@ -956,6 +956,8 @@ figure>img {
     font-weight: 700;
     color: #565F82;
     padding: 13px 17px;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
 }
 
 .link-left:active {
@@ -969,6 +971,8 @@ figure>img {
     border: 1px solid #A0B4FF;
     font-weight: 500;
     color: #C7D3FF;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
 }
 
 .link-right:hover {
