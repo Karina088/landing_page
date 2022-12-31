@@ -209,7 +209,9 @@
     }
 
     .menu {
-        justify-content: space-around;
+        justify-content: space-between;
+        padding-left: 24px;
+        padding-right: 24px;
     }
 
     .logo__header {
@@ -226,11 +228,6 @@
     .menu__btn {
         font-size: 10px;
         padding: 7px 12px;
-    }
-
-    .menu__btn-header {
-        margin-left: 148px;
-
     }
 
     .menu-btn {
@@ -355,6 +352,10 @@
         line-height: 13px;
     }
 
+    .content-par {
+        padding-top: 149px;
+    }
+
     .content__h1 {
         padding-top: 14px;
         padding-bottom: 26px;
@@ -369,9 +370,7 @@
     }
 
     .content__btn {
-        top: 49%;
-        width: 38px;
-        height: 38px;
+        top: 34%;
     }
 
     .content__btn-switch {
@@ -668,9 +667,9 @@
     }
 
     .content__btn {
-        top: 46%;
-        width: 35px;
-        height: 35px;
+        top: 44%;
+        width: 36px;
+        height: 36px;
     }
 
     .content__btn-switch {
@@ -909,11 +908,12 @@
     }
 
     .link-left {
-        padding: 10px 14px;
+        padding: 11px 15px;
     }
 
     .link-right {
-        padding: 9px 7px;
+        margin-left: -3px;
+        padding: 10px 8px;
     }
 
     .newletter__info {
@@ -961,25 +961,14 @@
         max-width: 270px;
     }
 
-    .content__btn {
-        top: 35%;
-
-    }
-
     .costumers-logo {
         padding-top: 32px;
         padding-bottom: 32px;
     }
 
-
-
     .swiper__content {
         background-size: 25%;
     }
-
-
-
-
 
     .newletter__info {
         margin: 88px 0 89px 0;
@@ -991,5 +980,45 @@
 
     .menu__btn-footer {
         display: none;
+    }
+}
+
+@media (min-height: 896px) {
+    .content__btn {
+        top: 32%;
+    }
+}
+
+@media (max-width: 320px) {
+    .faq-collapse__btn {
+        max-width: 310px;
+    }
+
+    .faq-collapse__content {
+        max-width: 310px;
+    }
+
+    .faq-collapse__content-par {
+        max-width: 150px;
+    }
+
+    .quotes-title {
+        max-width: 120px;
+        padding: 21px 0 12px 0;
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    p.swiper-par {
+        padding: 28px;
+        font-size: 8px;
+        line-height: 16px;
+    }
+
+    .faq-collapse__btn {
+        font-size: 8px;
+        line-height: 16px;
+        padding: 14px 0 15px 19px;
+        max-width: 310px;
     }
 }
