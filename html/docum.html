@@ -6,40 +6,50 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="../media.css">
     <title>Book</title>
 </head>
 
 <body>
-    <header class="menu center">
-        <div class="logo">
+    <header class="menu menu__header center">
+        <div class="logo logo__header">
             <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <circle cx="13" cy="13" r="13" fill="#5E81FE" />
             </svg>
         </div>
-        <nav class="menu__list">
-            <ul>
+        <div class="menu-btn">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <nav class="menu__list menu__list-header">
+            <ul class="menu__list-ul">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="#">Blog</a></li>
+                <li><a class="link-blog" href="#">Blog</a></li>
                 <li><a class="link-features" href="#">Features</a></li>
-                <li><a href="#">Pricing</a></li>
+                <li><a class="link-get-started" href="#">Pricing</a></li>
                 <li><a href="#">Documentation</a></li>
             </ul>
         </nav>
         <nav class="menu__social-media">
-            <a href="#"><img src="../img/facebook.jpg" alt="facebook icon"></a>
-            <a href="#"><img src="../img/telegram.jpg" alt="telegram icon"></a>
-            <a href="#"><img src="../img/twitter.jpg" alt="twitter icon"></a>
-            <a href="#"><img src="../img/m.jpg" alt="icon"></a>
-            <button class="menu__btn">Get started</button>
+            <a href="#"><img class="menu-icon" src="../img/facebook.jpg" alt="facebook icon"></a>
+            <a href="#"><img class="menu-icon" src="../img/telegram.jpg" alt="telegram icon"></a>
+            <a href="#"><img class="menu-icon" src="../img/twitter.jpg" alt="twitter icon"></a>
+            <a href="#"><img class="menu-icon" src="../img/m.jpg" alt="icon"></a>
+            <button class="menu__btn menu__btn-header">Get started</button>
         </nav>
     </header>
 
     <main style="background-color:#F5F8FF;">
-        <iframe src="https://gifer.com/embed/6OxJ" width=480 height=500 style='position:absolute; left:120px;'
-            allowFullScreen></iframe>
+        <div class="container">
+            <iframe src="https://gifer.com/embed/6OxJ" width=420 height=500 style='position:absolute;'
+                allowFullScreen></iframe>
+        </div>
+
     </main>
 
     <script src="../js/script.js"></script>
+    <script src="../js/menuButton.js"></script>
 </body>
 
 </html>
