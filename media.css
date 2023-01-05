@@ -667,7 +667,7 @@
     }
 
     .content__btn {
-        top: 44%;
+        /* top: 44%; */
         width: 36px;
         height: 36px;
     }
@@ -988,13 +988,45 @@
     }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 378px) {
+
+    .content__btn {
+        top: 44%;
+    }
+
+    figure {
+        max-width: 100px;
+        grid-template-columns: 50px 56px;
+    }
+
+    img.figure-main {
+        width: 100px;
+        height: 128px;
+    }
+
+    img.figure-img-mini {
+        width: 50px;
+        height: 56px;
+    }
+
+    blog__info-text {
+        max-width: 108px;
+    }
+
+    .blog__info-h5 {
+        line-height: 18px;
+    }
+
+    .blog__info-par {
+        font-size: 7px;
+    }
+
     .faq-collapse__btn {
         max-width: 310px;
     }
 
     .faq-collapse__content {
-        max-width: 310px;
+        max-width: 290px;
     }
 
     .faq-collapse__content-par {
@@ -1019,5 +1051,11 @@
         line-height: 16px;
         padding: 14px 0 15px 19px;
         max-width: 310px;
+    }
+
+    input[type="email"] {
+        padding: 12px 28px 12px 18px;
+        font-size: 9px;
+        line-height: 13px;
     }
 }
