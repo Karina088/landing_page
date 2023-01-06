@@ -38,9 +38,9 @@ document.querySelectorAll('form')
         (event) => event.preventDefault()));
 
 
-document.querySelector('.get-started__links')
-    .addEventListener('click', (event) =>
-        event.preventDefault());
+// document.querySelector('.get-started__links')
+//     .addEventListener('click', (event) =>
+//         event.preventDefault());
 
 document.querySelectorAll('.blog__info-p')
     .forEach(el => el.addEventListener('click',
